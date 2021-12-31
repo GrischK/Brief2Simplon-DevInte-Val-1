@@ -9,22 +9,23 @@
             <label for="firstname">Prénom :</label><br>
             <input type="text" id="firstname" name="firstname" placeholder="Jean" required="required"/><br>
             <label for="name">Nom :</label><br>
-            <input type="text" id="name" name="name" placeholder="Dupuis"required="required"/><br>
+            <input type="text" id="name" name="name" placeholder="Dupuis" required="required"/><br>
             <p>Sexe :<br>
             <label for="Homme">Homme</label><br>
-            <input type="radio" id="homme" name="sexe" /><br>
-            <label for="Homme">Femme</label><br>
-            <input type="radio" id="femme" name="sexe" /><br>
+            <input type="radio" id="Homme" name="sexe" /><br>
+            <label for="Femme">Femme</label><br>
+            <input type="radio" id="Femme" name="sexe" /><br>
             </p>
             <label for="email">Adresse e-mail :</label><br>
             <input type="email" id="email" name="email" placeholder="jean.dupuis@gmail.com" required="required"/><br>
             <label for="code_postal">Code postal :</label><br>
-            <input type="text" id="code_postal" name="code_postal" pattern="[0-9]{5}" placeholder="59000" required="required"/><br>
+            <input type="text" id="code_postal" name="code_postal" pattern="[0-9]{5}" placeholder="59000" required="required" minlength="5" maxlength="5"/><br>
             <label for="ville">ville :</label><br>
             <input type="text" id="ville" name="ville" placeholder="Lille" required="required"/><br>
             <label for="métier">Métier exercé :</label><br>
-            <select id="métier" name="métier" required="required" ><br>
-                <option value="Agriculteur">Agriculteur</option>
+            <select id="métier" name="métier" required="required">
+                <option value="">Choisissez un métier</option>    
+                <option value="Agriculteur">Agriculteur</option>    
                 <option value="Artisan">Artisan</option>
                 <option value="Commerçant et assimilé">Commerçant et assimilé</option>
                 <option value="Chef d'entreprise">Chef d'entreprise</option>
@@ -55,7 +56,8 @@
                 <option value="Ouvrier agricole ou assimilé">Ouvrier agricole ou assimilé</option>
             </select><br>
             <label for="métier">Nationalité :</label><br>
-            <select id="nationalité" name="nationalité" required="required"><br>
+            <select id="nationalité" name="nationalité" required="required">
+                <option value="">Choisissez une nationalité</option>
                 <option value="France">France</option>
                 <option value="Allemagne">Allemagne</option>
                 <option value="Espagne">Espagne</option>
@@ -80,7 +82,8 @@
             <label for="Date_naissance">Date de naissance :</label><br>
             <input type="date" id="Date_naissance" name="Date_naissance" required="required" /><br>
             <label for="pays_naissance">Pays de naissance :</label><br>
-            <select id="pays_naissance" name="pays_naissance" required="required"><br>
+            <select id="pays_naissance" name="pays_naissance" required="required">
+                <option value="">Choisissez un pays de naissance</option>
                 <option value="France">France</option>
                 <option value="Allemagne">Allemagne</option>
                 <option value="Espagne">Espagne</option>
@@ -102,13 +105,13 @@
                 <option value="Roumanie">Roumanie</option>
                 <option value="Serbie">Serbie</option>
             </select><br>
-            <label for="sécurité_sociale">Numéro de sécurité sociale (13 chiffre + clé à 2 chiffres):</label><br>
-            <input type="text" id="sécurité_sociale" name="sécurité_sociale" pattern="[0-9]{13}" placeholder="#############" required="required" required size="13"/><br>
-            <input type="text" id="sécurité_sociale" name="sécurité_sociale" pattern="[0-9]{2}" placeholder="##" required="required" required size="2"/><br>
-            <label for="passeport">Numéro du passeport (2 chiffres, 2 lettres, 5 chiffres):</label><br>
-            <input type="text" id="passeport" name="passeport" placeholder="12" pattern="[0-9]{2}"required="required"/><br>
-            <input type="text" id="passeport" name="passeport" placeholder="XY" pattern="[A-Za-z]{2}"required="required"/><br>
-            <input type="text" id="passeport" name="passeport" placeholder="34567" pattern="[0-9]{5}"required="required"/><br>  
+            <label >Numéro de sécurité sociale (13 chiffre + clé à 2 chiffres):</label><br>
+            <input type="text" name="sécurité_sociale" pattern="[0-9]{13}" placeholder="#############" required="required" minlength="13" maxlength="13"/><br>
+            <input type="text" name="sécurité_sociale" pattern="[0-9]{2}" placeholder="##" required="required" minlength="2" maxlength="2"/><br>
+            <label >Numéro du passeport (2 chiffres, 2 lettres, 5 chiffres):</label><br>
+            <input type="text" name="passeport" placeholder="12" pattern="[0-9]{2}" required="required" minlength="2" maxlength="2"/><br>
+            <input type="text" name="passeport" placeholder="XY" pattern="[A-Za-z]{2}" required="required" minlength="2" maxlength="2"/><br>
+            <input type="text" name="passeport" placeholder="34567" pattern="[0-9]{5}" required="required" minlength="5" maxlength="5"/><br>  
             <label for="date_delivrance_passeport">Date de délivrance du passeport :</label><br>
             <input type="date" id="date_delivrance_passeport" name="date_delivrance_passeport" required="required"/><br>
             <label for="date_validité_passeport">Date de validité du passeport :</label><br>

@@ -64,9 +64,10 @@ Voici la liste des attributs utilisés dans le formulaire :
 - **form** : L'identifiant du formulaire.
 - **name** : Le nom du champ qui sera rattaché à la donnée envoyée via le formulaire.
 - **type** : Une chaîne de caractère qui indique l[e type de champ représenté par l'élément `<input>`.
-- **"placeholder"** : indique une expression rationnelle que doit respecter la valeur du contrôle du formulaire.
+- **"placeholder"** : Indique une expression rationnelle que doit respecter la valeur du contrôle du formulaire.
 - **"required"** : Un attribut booléen qui indique que le champ doit être renseigné avant de pouvoir envoyer le formulaire.
 - **"value"** : La valeur du champ.
+- **"minlenght"** et **"maxlenght"** : Attribut qui contraint à la saisie d'une valeur minimale et maximale.
 
 
 ## Difficultés rencontrées
