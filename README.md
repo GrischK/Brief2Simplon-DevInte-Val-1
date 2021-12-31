@@ -1,4 +1,4 @@
-# # Brief 1 : Formulaire de contact
+# # Brief 2 : Formulaire de contact
 
 L'objectif de ce brief est de créer un formulaire en **HTML5** correspondant aux consignes.
 
