@@ -5,34 +5,112 @@
         <meta charset="UTF-8"/>
     </head>
     <body>
-        <form>
+        <form method="post" action="traitement.php">
             <label for="firstname">Prénom :</label><br>
-            <input type="text" id="firstname" name="firstname" /><br>
+            <input type="text" id="firstname" name="firstname" placeholder="Jean" required="required"/><br>
             <label for="name">Nom :</label><br>
-            <input type="text" id="name" name="name" /><br>
-            <label for="name">Sexe :</label><br>
-            <input type="text" id="sexe" name="sexe" /><br>
+            <input type="text" id="name" name="name" placeholder="Dupuis"required="required"/><br>
+            <p>Sexe :<br>
+            <label for="Homme">Homme</label><br>
+            <input type="radio" id="homme" name="sexe" /><br>
+            <label for="Homme">Femme</label><br>
+            <input type="radio" id="femme" name="sexe" /><br>
+            </p>
             <label for="email">Adresse e-mail :</label><br>
-            <input type="text" id="email" name="email" /><br>
+            <input type="email" id="email" name="email" placeholder="jean.dupuis@gmail.com" required="required"/><br>
             <label for="code_postal">Code postal :</label><br>
-            <input type="text" id="code_postal" name="code_postal" /><br>
+            <input type="text" id="code_postal" name="code_postal" pattern="[0-9]{5}" placeholder="59000" required="required"/><br>
             <label for="ville">ville :</label><br>
-            <input type="text" id="ville" name="ville" /><br>
+            <input type="text" id="ville" name="ville" placeholder="Lille" required="required"/><br>
             <label for="métier">Métier exercé :</label><br>
-            <input type="text" id="métier" name="métier" /><br>
-            <label for="nationalité">Nationalité :</label><br>
-            <input type="text" id="nationalité" name="nationalité" /><br>
+            <select id="métier" name="métier" required="required" ><br>
+                <option value="Agriculteur">Agriculteur</option>
+                <option value="Artisan">Artisan</option>
+                <option value="Commerçant et assimilé">Commerçant et assimilé</option>
+                <option value="Chef d'entreprise">Chef d'entreprise</option>
+                <option value="Profession libérale">Profession libérale</option>
+                <option value="Cadre de la fonction publique">Cadre de la fonction publique</option>
+                <option value="Professeur, profession scientifique">Professeur, profession scientifique</option>
+                <option value="Profession de l'information des arts et spectacles">Profession de l'information des arts et spectacles</option>
+                <option value="Cadre administratif ou commercial d'entreprise">Cadre administratif ou commercial d'entreprise</option>
+                <option value="Ingénieur ou cadre technique d'entreprise">Ingénieur ou cadre technique d'entreprise</option>
+                <option value="Instituteur et assimilié">Instituteur et assimilié</option>
+                <option value="Profession intermédiaire de la santé et du travail social">Profession intermédiaire de la santé et du travail social</option>
+                <option value="Clergé, religieux">Clergé, religieux</option>
+                <option value="Profession intermédiaire administrative du public">Profession intermédiaire administrative du public</option>
+                <option value="Profession intermédiaire administrative du privé">Profession intermédiaire administrative du privé</option>
+                <option value="Technicien (sauf technicien du tertiaire)">Technicien (sauf technicien du tertiaire)</option>
+                <option value="Contremaître, agent de maîtrise">Contremaître, agent de maîtrise</option>
+                <option value="Employé ou agent de service du secteur public">Employé ou agent de service du secteur public</option>
+                <option value="Policier ou militaire">Policier ou militaire</option>
+                <option value="Employé administratif du secteur privé">Employé administratif du secteur privé</option>
+                <option value="Employé de commerce">Employé de commerce</option>
+                <option value="Personnel des services directs au particulier">Personnel des services directs au particulier</option>
+                <option value="Ouvrier qualifié de type industriel">Ouvrier qualifié de type industriel</option>
+                <option value="Ouvrier qualifié de type artisanal">Ouvrier qualifié de type artisanal</option>
+                <option value="Chauffeur">Chauffeur</option>
+                <option value="Ouvrier qualifié de la manutention, du transport">Ouvrier qualifié de la manutention, du transport</option>
+                <option value="Ouvrier non qualifié de type industriel">Ouvrier non qualifié de type industriel</option>
+                <option value="Ouvrier non qualifié de type artisanal">Ouvrier non qualifié de type artisanal</option>
+                <option value="Ouvrier agricole ou assimilé">Ouvrier agricole ou assimilé</option>
+            </select><br>
+            <label for="métier">Nationalité :</label><br>
+            <select id="nationalité" name="nationalité" required="required"><br>
+                <option value="France">France</option>
+                <option value="Allemagne">Allemagne</option>
+                <option value="Espagne">Espagne</option>
+                <option value="Italie">Italie</option>
+                <option value="Belgique">Belgique</option>
+                <option value="Royaume-Uni">Royaume-Uni</option>
+                <option value="Irlande">Irlande</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Pologne">Pologne</option>
+                <option value="Autriche">Autriche</option>
+                <option value="Suisse">Suisse</option>
+                <option value="Pays-Bas">Pays-Bas</option>
+                <option value="Suède">Suède</option>
+                <option value="Norvège">Norvège</option>
+                <option value="Finlande">Finlande</option>
+                <option value="Hongrie">Hongrie</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Russie">Russie</option>
+                <option value="Roumanie">Roumanie</option>
+                <option value="Serbie">Serbie</option>
+            </select><br>
             <label for="Date_naissance">Date de naissance :</label><br>
-            <input type="text" id="Date_naissance" name="Date_naissance" /><br>
+            <input type="date" id="Date_naissance" name="Date_naissance" required="required" /><br>
             <label for="pays_naissance">Pays de naissance :</label><br>
-            <input type="text" id="pays_naissance" name="pays_naissance" /><br>
-            <label for="sécurité_sociale">Numéro de sécurité social :</label><br>
-            <input type="text" id="sécurité_sociale" name="sécurité_sociale" /><br>
+            <select id="pays_naissance" name="pays_naissance" required="required"><br>
+                <option value="France">France</option>
+                <option value="Allemagne">Allemagne</option>
+                <option value="Espagne">Espagne</option>
+                <option value="Italie">Italie</option>
+                <option value="Belgique">Belgique</option>
+                <option value="Royaume-Uni">Royaume-Uni</option>
+                <option value="Irlande">Irlande</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Pologne">Pologne</option>
+                <option value="Autriche">Autriche</option>
+                <option value="Suisse">Suisse</option>
+                <option value="Pays-Bas">Pays-Bas</option>
+                <option value="Suède">Suède</option>
+                <option value="Norvège">Norvège</option>
+                <option value="Finlande">Finlande</option>
+                <option value="Hongrie">Hongrie</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Russie">Russie</option>
+                <option value="Roumanie">Roumanie</option>
+                <option value="Serbie">Serbie</option>
+            </select><br>
+            <label for="sécurité_sociale">Numéro de sécurité social (13 chiffre + clé à 2 chiffres):</label><br>
+            <input type="text" id="sécurité_sociale" name="sécurité_sociale" pattern="[0-9]{13}" placeholder="#############"required="required"/><br>
+            <input type="text" id="sécurité_sociale" name="sécurité_sociale" pattern="[0-9]{2}" placeholder="##"required="required"/><br>
             <label for="passeport">Numéro du passeport :</label><br>
-            <input type="text" id="passeport" name="passeport" /><br>
+            <input type="text" id="passeport" name="passeport" required="required"/><br>
             <label for="date_delivrance_passeport">Date de délivrance du passeport :</label><br>
-            <input type="text" id="date_delivrance_passeport" name="date_delivrance_passeport" /><br>
+            <input type="date" id="date_delivrance_passeport" name="date_delivrance_passeport" required="required"/><br>
             <label for="date_validité_passeport">Date de validité du passeport :</label><br>
-            <input type="text" id="date_validité_passeport" name="date_validité_passeport" /><br>
+            <input type="date" id="date_validité_passeport" name="date_validité_passeport" required="required"/><br>
+            <button type="submit">Envoyer</button>
         </form>
     </body>
