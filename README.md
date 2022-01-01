@@ -70,8 +70,7 @@ Voici la liste des attributs utilisés dans le formulaire :
 - **"minlenght"** et **"maxlenght"** : Attribut qui contraint à la saisie d'une valeur minimale et maximale.
 
 
-## Difficultés rencontrées
-**Respect des consignes** : 
+## Difficultés rencontrées 
 La principale difficulté rencontrée a été au niveau de la du **"numéro de sécurité sociale"** et du **"numéro de passeport"**.
 En effet pour respecter les contraintes liées à la casse (13 chiffres + clé à 2 chiffres pour le numéro de sécurité sociale et 2 chiffres, 2 lettres, 5 chiffres pour le passeport), je n'ai pas trouvé de solution au niveau de l'attribut patter afin de faire respecter cette casse. 
 J'ai donc décidé de créer des champs différents en précisant à l'utilisateur la manière de rentrer les données :
@@ -82,6 +81,9 @@ J'ai donc décidé de créer des champs différents en précisant à l'utilisate
 	- 1 champ de 2 chiffres
 	- 1 champ de 2 lettres
 	- 1 champ de 5 lettres	
+
+La seconde difficulté auquelle j'ai dû faire face est celle de rendre obligatoire la saisie d'une des cases du champ **sexe**. 
+D'après mes recherches, aucune technique en **HTML** ne permet d'utiliser l'attribut "required" sur un `<input>` de type `<radio>.
 
 ## Ressources utilisées :
 Voici une liste non exhaustive des ressources qui m'ont aidé :
