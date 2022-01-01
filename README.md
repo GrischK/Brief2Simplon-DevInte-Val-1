@@ -83,7 +83,7 @@ J'ai donc décidé de créer des champs différents en précisant à l'utilisate
 	- 1 champ de 5 lettres	
 
 La seconde difficulté auquelle j'ai dû faire face est celle de rendre obligatoire la saisie d'une des cases du champ **sexe**. 
-D'après mes recherches, aucune technique en **HTML** ne permet d'utiliser l'attribut "required" sur un `<input>` de type `<radio>.
+D'après mes recherches, aucune technique en **HTML** ne permet d'utiliser l'attribut "required" sur un `<input>` de type `<radio>`.
 
 ## Ressources utilisées :
 Voici une liste non exhaustive des ressources qui m'ont aidé :
