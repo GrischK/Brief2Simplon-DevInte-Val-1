@@ -7,12 +7,12 @@
     <body>
         <form method="post" action="traitement.php">
             <label for="firstname">Prénom :</label><br>
-            <input type="text" id="firstname" name="firstname" placeholder="Jean" required="required"/><br>
+            <input type="text" id="firstname" name="firstname" placeholder="Jean" required="required" pattern="[A-Za-z- ]{1,50}"/><br>
             <label for="name">Nom :</label><br>
-            <input type="text" id="name" name="name" placeholder="Dupuis" required="required"/><br>
+            <input type="text" id="name" name="name" placeholder="Dupuis" required="required" pattern="[A-Za-z- ]{1,50}"/><br>
             <p>Sexe :<br>
             <label for="Homme">Homme</label><br>
-            <input type="radio" id="Homme" name="sexe" /><br>
+            <input type="radio" id="Homme" name="sexe" required="required"/><br>
             <label for="Femme">Femme</label><br>
             <input type="radio" id="Femme" name="sexe" /><br>
             </p>
@@ -105,7 +105,7 @@
                 <option value="Roumanie">Roumanie</option>
                 <option value="Serbie">Serbie</option>
             </select><br>
-            <label >Numéro de sécurité sociale (13 chiffre + clé à 2 chiffres):</label><br>
+            <label >Numéro de sécurité sociale (13 chiffres + clé à 2 chiffres):</label><br>
             <input type="text" name="sécurité_sociale" pattern="[0-9]{13}" placeholder="#############" required="required" minlength="13" maxlength="13"/><br>
             <input type="text" name="sécurité_sociale" pattern="[0-9]{2}" placeholder="##" required="required" minlength="2" maxlength="2"/><br>
             <label >Numéro du passeport (2 chiffres, 2 lettres, 5 chiffres):</label><br>
