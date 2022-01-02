@@ -60,7 +60,7 @@ Voici la liste des attributs utilisés dans le formulaire :
 - **"submit"** : un bouton qui envoie le formulaire.
 - **"text"** : un champ texte sur une seule ligne. Les sauts de ligne sont automatiquement retirés.
 
-2. Attributs
+2. Attributs :
 - **form** : L'identifiant du formulaire.
 - **name** : Le nom du champ qui sera rattaché à la donnée envoyée via le formulaire.
 - **type** : Une chaîne de caractère qui indique l[e type de champ représenté par l'élément `<input>`.
@@ -71,7 +71,7 @@ Voici la liste des attributs utilisés dans le formulaire :
 
 
 ## Difficultés rencontrées 
-La principale difficulté rencontrée a été au niveau de la du **"numéro de sécurité sociale"** et du **"numéro de passeport"**.
+La principale difficulté rencontrée a été au niveau du **"numéro de sécurité sociale"** et du **"numéro de passeport"**.
 En effet pour respecter les contraintes liées à la casse (13 chiffres + clé à 2 chiffres pour le numéro de sécurité sociale et 2 chiffres, 2 lettres, 5 chiffres pour le passeport), je n'ai pas trouvé de solution au niveau de l'attribut patter afin de faire respecter cette casse. 
 J'ai donc décidé de créer des champs différents en précisant à l'utilisateur la manière de rentrer les données :
 - 2 champs pour le numéro de sécurité sociale :
@@ -84,6 +84,7 @@ J'ai donc décidé de créer des champs différents en précisant à l'utilisate
 
 La seconde difficulté auquelle j'ai dû faire face est celle de rendre obligatoire la saisie d'une des cases du champ **sexe**. 
 D'après mes recherches, aucune technique en **HTML** ne permet d'utiliser l'attribut "required" sur un `<input>` de type `<radio>`.
+J'ai résolu ce problème en ajoutant l'attribut "required" sur le premier `<input>`.
 
 ## Ressources utilisées :
 Voici une liste non exhaustive des ressources qui m'ont aidé :
